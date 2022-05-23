@@ -87,38 +87,7 @@ export default {
   },
   data() {
     return {
-      tasks: [
-        {
-          id: 1,
-          text: "Do grocery",
-          priority: PRIORITY.MEH,
-          isEditMode: false,
-        },
-        {
-          id: 2,
-          text: "Do laundry",
-          priority: PRIORITY.MEH,
-          isEditMode: false,
-        },
-        {
-          id: 3,
-          text: "reading",
-          priority: PRIORITY.LIFE_CHANGING,
-          isEditMode: false,
-        },
-        {
-          id: 4,
-          text: "car service",
-          priority: PRIORITY.IMPORTANT,
-          isEditMode: false,
-        },
-        {
-          id: 5,
-          text: "pick up kids",
-          priority: PRIORITY.IMPORTANT,
-          isEditMode: false,
-        },
-      ],
+      tasks: [],
       selectedPriority: 1
     };
   },
