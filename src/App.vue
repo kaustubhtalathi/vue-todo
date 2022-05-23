@@ -81,9 +81,9 @@ export default {
     TaskForm,
   },
   created() {
-    // window.addEventListener("beforeunload", this.saveState);
-    // const cachedTasks = JSON.parse(window.localStorage.getItem("todoTasks"));
-    // this.tasks = cachedTasks || this.proxy.tasks || [];
+    window.addEventListener("beforeunload", this.saveState);
+    const cachedTasks = JSON.parse(window.localStorage.getItem("todoTasks"));
+    this.tasks = cachedTasks || this.proxy.tasks || [];
   },
   data() {
     return {
